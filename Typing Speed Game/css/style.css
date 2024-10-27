@@ -1,0 +1,208 @@
+:root {
+  --main-color: #2196f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message span {
+  font-weight: bold;
+  color: limegreen;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+
+.levels {
+  width: 150px;
+  height: 30px;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  position: relative;
+  left: 80px;
+  transition: 0.3s;
+}
+
+.levels:focus {
+  outline: none;
+  border-color: #85c8ff;
+}
+
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: limegreen;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start:hover {
+  background-color: rgb(32, 145, 32);
+}
+
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+
+.input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+  transition: 0.3s;
+}
+
+.input:focus {
+  border-color: #85c8ff;
+  outline: none;
+}
+
+.upcoming-words {
+  background-color: white;
+  margin: 15px auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+.control span {
+  font-weight: bold;
+  color: limegreen;
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.finish .good {
+  color: var(--main-color);
+}
+
+.finish .bad {
+  color: red;
+}
+
+.instructions {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.instructions h1 {
+  text-align: center;
+  color: var(--main-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px 5px #ebebeb;
+}
+
+.instructions p {
+  padding: 20px 40px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.instructions h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: var(--main-color);
+}
+
+.instructions ul {
+  list-style: none;
+}
+
+.instructions ul li {
+  padding-top: 10px;
+  margin: 0 0 5px 40px;
+}
+
+.instructions ul li span {
+  font-size: 21px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.instructions ul li:nth-child(1) span {
+  color: rgb(6, 221, 6);
+}
+.instructions ul li:nth-child(2) span {
+  color: rgb(222, 222, 16);
+}
+.instructions ul li:nth-child(3) span {
+  color: red;
+}
